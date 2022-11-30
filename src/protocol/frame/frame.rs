@@ -123,7 +123,8 @@ impl FrameHeader {
     ///
     /// Of course this does not change frame contents. It just generates a mask.
     pub(crate) fn set_random_mask(&mut self) {
-        self.mask = Some(generate_mask())
+        println!("updated block of mask");
+        // self.mask = Some(generate_mask())
     }
 }
 
